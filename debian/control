@@ -1,0 +1,15 @@
+Source: php5-msgpack
+Section: php
+Priority: optional
+Maintainer: Jordi Clariana <jordiclariana@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), php5-dev
+Standards-Version: 3.8.4
+Homepage: https://github.com/jordiclariana/php-msgpack
+
+Package: php5-msgpack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: This extension provide API for communicating with MessagePack serialization.
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.

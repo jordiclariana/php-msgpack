@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[ -e /etc/php5/conf.d/msgpack.ini ] && rm -f /etc/php5/conf.d/msgpack.ini
+
+exit 0
+

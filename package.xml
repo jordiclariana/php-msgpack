@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>msgpack</name>
+ <channel>pecl.php.net</channel>
+ <summary>PHP extension for interfacing with MessagePack</summary>
+ <description>This extension provide API for communicating with MessagePack serialization.</description>
+ <lead>
+  <name>Advect</name>
+  <user>advect</user>
+  <email>advect@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Xinchen Hui</name>
+  <user>laruence</user>
+  <email>laruence@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2013-02-19</date>
+ <time>10:16:29</time>
+ <version>
+  <release>0.5.5</release>
+  <api>0.5.5</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license filesource="LICENSE">New BSD</license>
+ <notes>
+  - Fix ZTS build
+  - Fixed Bug #14 ("Invalid read" reported by valgrind)
+  - Fixed FR #8 (Return on unserialization)
+ </notes>
+ <contents>
+  <dir name="/">
+   <file name="LICENSE" role="doc" />
+   <file name="README.md" role="doc" />
+   <file name="CREDITS" role="doc" />
+   <file name="ChangeLog" role="doc" />
+   <file name="EXPERIMENTAL" role="doc" />
+   <file name="config.m4" role="src" />
+   <file name="config.w32" role="src" />
+   <file name="msgpack.php" role="src" />
+   <file name="msgpack.c" role="src" />
+   <file name="msgpack_class.c" role="src" />
+   <file name="msgpack_class.h" role="src" />
+   <file name="msgpack_convert.c" role="src" />
+   <file name="msgpack_convert.h" role="src" />
+   <file name="msgpack_errors.h" role="src" />
+   <file name="msgpack_pack.c" role="src" />
+   <file name="msgpack_pack.h" role="src" />
+   <file name="msgpack_unpack.c" role="src" />
+   <file name="msgpack_unpack.h" role="src" />
+   <file name="php_msgpack.h" role="src" />
+   <file name="msgpack/pack_define.h" role="src" />
+   <file name="msgpack/pack_template.h" role="src" />
+   <file name="msgpack/unpack_define.h" role="src" />
+   <file name="msgpack/unpack_template.h" role="src" />
+   <file name="msgpack/sysdep.h" role="src" />
+   <file name="msgpack/version.h" role="src" />
+   <dir name="tests">
+    <file name="001.phpt" role="test" />
+    <file name="002.phpt" role="test" />
+    <file name="003.phpt" role="test" />
+    <file name="004.phpt" role="test" />
+    <file name="005.phpt" role="test" />
+    <file name="006.phpt" role="test" />
+    <file name="007.phpt" role="test" />
+    <file name="008.phpt" role="test" />
+    <file name="009.phpt" role="test" />
+    <file name="009b.phpt" role="test" />
+    <file name="010.phpt" role="test" />
+    <file name="012.phpt" role="test" />
+    <file name="012c.phpt" role="test" />
+    <file name="013.phpt" role="test" />
+    <file name="014.phpt" role="test" />
+    <file name="015.phpt" role="test" />
+    <file name="015b.phpt" role="test" />
+    <file name="015d.phpt" role="test" />
+    <file name="015e.phpt" role="test" />
+    <file name="015f.phpt" role="test" />
+    <file name="016.phpt" role="test" />
+    <file name="016c.phpt" role="test" />
+    <file name="017.phpt" role="test" />
+    <file name="018.phpt" role="test" />
+    <file name="019.phpt" role="test" />
+    <file name="020.phpt" role="test" />
+    <file name="021.phpt" role="test" />
+    <file name="022.phpt" role="test" />
+    <file name="023.phpt" role="test" />
+    <file name="024.phpt" role="test" />
+    <file name="024b.phpt" role="test" />
+    <file name="024c.phpt" role="test" />
+    <file name="025.phpt" role="test" />
+    <file name="025c.phpt" role="test" />
+    <file name="026.phpt" role="test" />
+    <file name="026b.phpt" role="test" />
+    <file name="026d.phpt" role="test" />
+    <file name="027.phpt" role="test" />
+    <file name="027d.phpt" role="test" />
+    <file name="028.phpt" role="test" />
+    <file name="028b.phpt" role="test" />
+    <file name="028c.phpt" role="test" />
+    <file name="028d.phpt" role="test" />
+    <file name="029.phpt" role="test" />
+    <file name="030.phpt" role="test" />
+    <file name="031.phpt" role="test" />
+    <file name="032.phpt" role="test" />
+    <file name="033.phpt" role="test" />
+    <file name="034.phpt" role="test" />
+    <file name="035.phpt" role="test" />
+    <file name="040.phpt" role="test" />
+    <file name="040b.phpt" role="test" />
+    <file name="040c.phpt" role="test" />
+    <file name="040d.phpt" role="test" />
+    <file name="041.phpt" role="test" />
+    <file name="042.phpt" role="test" />
+    <file name="050.phpt" role="test" />
+    <file name="060.phpt" role="test" />
+    <file name="060b.phpt" role="test" />
+    <file name="060c.phpt" role="test" />
+    <file name="061.phpt" role="test" />
+    <file name="061b.phpt" role="test" />
+    <file name="061c.phpt" role="test" />
+    <file name="062.phpt" role="test" />
+    <file name="063.phpt" role="test" />
+    <file name="064.phpt" role="test" />
+    <file name="064b.phpt" role="test" />
+    <file name="064c.phpt" role="test" />
+    <file name="065.phpt" role="test" />
+    <file name="065b.phpt" role="test" />
+    <file name="065c.phpt" role="test" />
+    <file name="066.phpt" role="test" />
+    <file name="067.phpt" role="test" />
+    <file name="070.phpt" role="test" />
+    <file name="070b.phpt" role="test" />
+    <file name="070c.phpt" role="test" />
+    <file name="071.phpt" role="test" />
+    <file name="071b.phpt" role="test" />
+    <file name="071c.phpt" role="test" />
+    <file name="072.phpt" role="test" />
+    <file name="072b.phpt" role="test" />
+    <file name="072c.phpt" role="test" />
+    <file name="073.phpt" role="test" />
+    <file name="073b.phpt" role="test" />
+    <file name="073c.phpt" role="test" />
+    <file name="080.phpt" role="test" />
+    <file name="081.phpt" role="test" />
+    <file name="082.phpt" role="test" />
+    <file name="083.phpt" role="test" />
+    <file name="084.phpt" role="test" />
+    <file name="085.phpt" role="test" />
+    <file name="086.phpt" role="test" />
+    <file name="087.phpt" role="test" />
+    <file name="088.phpt" role="test" />
+    <file name="089.phpt" role="test" />
+    <file name="090.phpt" role="test" />
+    <file name="090b.phpt" role="test" />
+    <file name="091.phpt" role="test" />
+    <file name="091b.phpt" role="test" />
+    <file name="092.phpt" role="test" />
+    <file name="092b.phpt" role="test" />
+    <file name="093.phpt" role="test" />
+    <file name="093b.phpt" role="test" />
+    <file name="094.phpt" role="test" />
+    <file name="094b.phpt" role="test" />
+    <file name="095.phpt" role="test" />
+    <file name="095b.phpt" role="test" />
+    <file name="096.phpt" role="test" />
+    <file name="096b.phpt" role="test" />
+    <file name="097.phpt" role="test" />
+    <file name="097b.phpt" role="test" />
+    <file name="098.phpt" role="test" />
+    <file name="098b.phpt" role="test" />
+    <file name="099.phpt" role="test" />
+    <file name="099b.phpt" role="test" />
+    <file name="100.phpt" role="test" />
+    <file name="100b.phpt" role="test" />
+    <file name="101.phpt" role="test" />
+    <file name="101b.phpt" role="test" />
+    <file name="102.phpt" role="test" />
+    <file name="102b.phpt" role="test" />
+    <file name="103.phpt" role="test" />
+    <file name="103b.phpt" role="test" />
+    <file name="104.phpt" role="test" />
+    <file name="104b.phpt" role="test" />
+    <file name="105.phpt" role="test" />
+    <file name="105b.phpt" role="test" />
+    <file name="106.phpt" role="test" />
+    <file name="106b.phpt" role="test" />
+    <file name="107.phpt" role="test" />
+    <file name="107b.phpt" role="test" />
+    <file name="108.phpt" role="test" />
+    <file name="108b.phpt" role="test" />
+    <file name="109.phpt" role="test" />
+    <file name="109b.phpt" role="test" />
+    <file name="110.phpt" role="test" />
+    <file name="110b.phpt" role="test" />
+    <file name="111.phpt" role="test" />
+    <file name="111b.phpt" role="test" />
+    <file name="112.phpt" role="test" />
+    <file name="112b.phpt" role="test" />
+    <file name="113.phpt" role="test" />
+    <file name="113b.phpt" role="test" />
+    <file name="114.phpt" role="test" />
+    <file name="114b.phpt" role="test" />
+    <file name="115.phpt" role="test" />
+    <file name="115b.phpt" role="test" />
+    <file name="116.phpt" role="test" />
+    <file name="116b.phpt" role="test" />
+    <file name="117.phpt" role="test" />
+    <file name="117b.phpt" role="test" />
+    <file name="118.phpt" role="test" />
+    <file name="118b.phpt" role="test" />
+    <file name="119.phpt" role="test" />
+    <file name="119b.phpt" role="test" />
+    <file name="120.phpt" role="test" />
+    <file name="120b.phpt" role="test" />
+    <file name="121.phpt" role="test" />
+    <file name="121b.phpt" role="test" />
+    <file name="122.phpt" role="test" />
+    <file name="122b.phpt" role="test" />
+    <file name="123.phpt" role="test" />
+    <file name="123b.phpt" role="test" />
+    <file name="124.phpt" role="test" />
+    <file name="124b.phpt" role="test" />
+    <file name="125.phpt" role="test" />
+    <file name="125b.phpt" role="test" />
+    <file name="126.phpt" role="test" />
+    <file name="126b.phpt" role="test" />
+    <file name="127.phpt" role="test" />
+    <file name="127b.phpt" role="test" />
+    <file name="128.phpt" role="test" />
+    <file name="128b.phpt" role="test" />
+    <file name="129.phpt" role="test" />
+    <file name="129b.phpt" role="test" />
+    <file name="130.phpt" role="test" />
+    <file name="130b.phpt" role="test" />
+    <file name="131.phpt" role="test" />
+    <file name="131b.phpt" role="test" />
+    <file name="132.phpt" role="test" />
+    <file name="132b.phpt" role="test" />
+    <file name="133.phpt" role="test" />
+    <file name="133b.phpt" role="test" />
+    <file name="134.phpt" role="test" />
+    <file name="134b.phpt" role="test" />
+    <file name="135.phpt" role="test" />
+    <file name="135b.phpt" role="test" />
+    <file name="136.phpt" role="test" />
+    <file name="136b.phpt" role="test" />
+    <file name="bug006.phpt" role="test" />
+    <file name="bug011.phpt" role="test" />
+    <file name="bug012.phpt" role="test" />
+   </dir>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.3</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>msgpack</providesextension>
+ <extsrcrelease />
+ <changelog> 
+  <release> 
+   <date>2013-02-19</date> 
+   <version> 
+    <release>0.5.5</release> 
+    <api>0.5.5</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fix ZTS build
+    - Fixed Bug #14 ("Invalid read" reported by valgrind)
+    - Fixed FR #8 (Return on unserialization)
+   </notes> 
+  </release> 
+
+  <release> 
+   <date>2013-02-18</date> 
+   <version> 
+    <release>0.5.4</release> 
+    <api>0.5.4</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed Bug #12 (msgpack_seriallize interfere with php serialize).
+    - Fixed Bug #11 (unpacking empty array / segmentation fault).
+   </notes> 
+  </release> 
+  <release> 
+   <date>2012-10-12</date> 
+   <version> 
+    <release>0.5.3</release> 
+    <api>0.5.3</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed Bug #6 (bug with incorrect packing of mixed arrays)
+   </notes> 
+  </release> 
+  <release> 
+   <date>2012-09-14</date> 
+   <version> 
+    <release>0.5.2</release> 
+    <api>0.5.2</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Initial release
+   </notes> 
+  </release> 
+ </changelog>
+</package>
+<!--
+vim:et:ts=1:sw=1
+--> 

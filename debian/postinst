@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[ -d /etc/php5/conf.d ] && echo extension=msgpack.so > /etc/php5/conf.d/msgpack.ini
+
+exit 0
+
